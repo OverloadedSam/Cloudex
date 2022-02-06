@@ -6,6 +6,7 @@
   --color-body: #918ca4;
 }
 
+/* Typography */
 html {
   font-size: 62.5%;
 }
@@ -40,7 +41,6 @@ p {
   margin-top: 0;
 }
 
-/* Media query for computers/laptops and wider screens. */
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -56,5 +56,33 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  font-size: 2rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: '-->';
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
