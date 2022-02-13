@@ -1,0 +1,23 @@
+{
+  "name": "cloudex",
+  "version": "1.0.0",
+  "description": "Imaginary cloud hosting service provider app.",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OverloadedSam/Cloudex.git"
+  },
+  "author": "Samdeesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OverloadedSam/Cloudex/issues"
+  },
+  "homepage": "https://github.com/OverloadedSam/Cloudex#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
