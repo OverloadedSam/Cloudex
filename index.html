@@ -21,6 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="./images/icon.png" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -46,13 +48,15 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">We Made The Clouds Work For You!</h1>
+          <h1 class="block__heading" data-aos="zoom-in-up">
+            We Made The Clouds Work For You!
+          </h1>
           <p class="hero__tagline">
             Free yourself from servers by moving to the Cloud.
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in-down">
           <source
             type="image/webp"
             srcset="./images/banner.webp 1x, ./images/banner@2x.webp 2x"
@@ -68,7 +72,11 @@
     <!-- Hero Background -->
 
     <!-- Domain Block -->
-    <section id="block-domain" class="block container block-domain">
+    <section
+      id="block-domain"
+      class="block container block-domain"
+      data-aos="fade-up"
+    >
       <header class="block__header">
         <h2 class="block__heading">Starting at $10 per month</h2>
         <p class="block__content">
@@ -102,7 +110,11 @@
     <!-- Domain Block -->
 
     <!-- Plans Block -->
-    <section id="block-plans" class="container block block-plans">
+    <section
+      id="block-plans"
+      class="container block block-plans"
+      data-aos="zoom-in-down"
+    >
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -181,7 +193,7 @@
       </header>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-down">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="../images/sprite.svg#easy"></use>
@@ -195,7 +207,7 @@
           </p>
           <a class="link-arrow" href="#">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source
             type="image/webp"
             srcset="./images/easy.webp 1x, ./images/easy@2x.webp 2x"
@@ -213,7 +225,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-down">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="../images/sprite.svg#computer"></use>
@@ -227,7 +239,7 @@
           </p>
           <a class="link-arrow" href="#">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source
             type="image/webp"
             srcset="./images/fast.webp 1x, ./images/fast@2x.webp 2x"
@@ -245,7 +257,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-down">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="../images/sprite.svg#wordpress"></use>
@@ -259,7 +271,7 @@
           </p>
           <a class="link-arrow" href="#">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source
             type="image/webp"
             srcset="./images/wordpress.webp 1x, ./images/wordpress@2x.webp 2x"
@@ -277,7 +289,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-down">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="../images/sprite.svg#clock"></use>
@@ -291,7 +303,7 @@
           </p>
           <a class="link-arrow" href="#">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source
             type="image/webp"
             srcset="./images/support.webp 1x, ./images/support@2x.webp 2x"
@@ -317,7 +329,7 @@
       </header>
 
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="flip-left">
           <source
             type="image/webp"
             srcset="./images/ipad.webp 1x, ./images/ipad@2x.webp 2x"
@@ -329,7 +341,7 @@
           <img src="./images/ipad.png" alt="Website dashboard" />
         </picture>
 
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -394,7 +406,7 @@
       </header>
 
       <div class="container">
-        <div class="card testimonial">
+        <div class="card testimonial" data-aos="fade-up">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
               <img
@@ -409,7 +421,7 @@
             </div>
             <blockquote class="quote">
               <p class="quote__text">
-                Cloudex had a great UI and cloud service. I was a bit worried
+                Cloudex has a great UI and cloud service. I was a bit worried
                 about tech support, but it wasn't a problem at all. I love using
                 Cloudex when I have to deploy my websites within minutes.
               </p>
@@ -525,12 +537,16 @@
         </section>
         <div class="footer__brand">
           <img src="./images/cloudex-logo.svg" alt="logo" />
-          <p class="footer__copyright">Copyright 2021 Cloudex</p>
+          <p class="footer__copyright">&copy; Copyright 2021 Cloudex Inc.</p>
         </div>
       </div>
     </footer>
     <!-- Footer -->
 
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
